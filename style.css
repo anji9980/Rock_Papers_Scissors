@@ -1,0 +1,52 @@
+/* *{
+    background-color: rgb(155, 149, 140);
+    border: none;
+    margin: 0px;
+}
+
+#text{
+    text-align: center;
+}
+
+#box{
+    margin-top: 8%;
+    text-align: center;
+    background-color: rgb(34, 120, 128);
+    border: none;
+    border-radius: 80px;
+    height: 150px;
+}
+
+
+#rock{
+    align-items: center;
+    background-color: rgb(80, 39, 39);
+    color: white;
+    height: 40px;
+    width: 80px;
+    border: solid;
+    border-color: black;
+    border-radius: 30px;
+}
+
+#paper{
+    align-items: center;
+    background-color: rgb(80, 39, 39);
+    color: white;
+    height: 40px;
+    width: 80px;
+    border: solid;
+    border-color: black;
+    border-radius: 30px;
+}
+
+#sicssors{
+    align-items: center;
+    background-color: rgb(80, 39, 39);
+    color: white;
+    height: 40px;
+    width: 80px;
+    border: solid;
+    border-color: black;
+    border-radius: 30px;
+} */

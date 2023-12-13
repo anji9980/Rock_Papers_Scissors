@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="text">Welcome to Rock Paper Sicssors Game!!</h1>
+    <div id="box">
+        <button id="rock" 
+            onclick="
+                let computerMove = pickMove();
+                let playerMove = 'rock';
+                GameResult(playerMove,computerMove);
+            "
+        >Rock</button>
+
+
+
+        <button id="paper" onclick="
+                let computerMove = pickMove();
+                let playerMove = 'paper';
+                GameResult(playerMove,computerMove);
+        ">Paper</button>
+
+
+        <button id="sicssors" onclick="
+                let computerMove = pickMove();
+                let playerMove = 'sicssors';
+                GameResult(playerMove,computerMove);
+            ">Sicssors</button>
+    </div>
+    <script>
+       
+        function pickMove(){
+            const randomnumber=Math.random();
+            let computerMove='';
+            if(randomnumber>=0 && randomnumber<1/3){
+                computerMove='rock';
+            }
+            else if(randomnumber>=1/3 && randomnumber<2/3){
+                computerMove='paper';
+            }
+            else if(randomnumber>=2/3 && randomnumber<1){
+                computerMove='sicssors';
+            }
+            return computerMove;
+        }
+
+        function GameResult(playerMove,computerMove){
+
+            if(playerMove=='rock'){
+                let result='';
+
+                if(computerMove==='rock'){
+                    result='Tie';
+                }
+                else if(computerMove==='paper'){
+                    result='you lose';
+                }
+                else if(computerMove==='sicssors'){
+                    result='you win';
+                }
+
+                alert(`you picked Rock computer picked ${computerMove}, ${result}`);
+            }
+            else if(playerMove==='paper'){
+                
+                if(computerMove==='paper'){
+                    result='Tie';
+                }
+                else if(computerMove==='rock'){
+                    result='you win';
+                }
+                else if(computerMove==='sicssors'){
+                    result='you lose';
+                }
+
+                alert(`you picked Paper computer picked ${computerMove}, ${result}`);
+            }
+            else if(playerMove==='sicssors'){
+
+                if(computerMove==='rock'){
+                    result='Tie';
+                }
+                else if(computerMove==='paper'){
+                    result='you lose';
+                }
+                else if(computerMove==='sicssors'){
+                    result='you win';
+                }
+
+                alert(`you picked Rock computer picked ${computerMove}, ${result}`);
+            }
+        }
+    </script>
+</body>
+</html>
